@@ -4,26 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script
-            src="https://kit.fontawesome.com/818ae88ed0.js"
-            crossorigin="anonymous"
-        ></script>
         <link rel="stylesheet" href="style.css" />
         <title>Pop-up Menu</title>
     </head>
     <body>
         <header class="header">
-            <h2 class="logo"><a href="#">hooli</a></h2>
+            <h2 class="logo"><a class="logo__link focus" href="#">hooli</a></h2>
             <ul class="nav">
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Log In</li>
+                <li class="nav-item"><a class="nav__link focus" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav__link focus" href="#">Log In</a></li>
                 <li class="nav-item">
                     <input
                         type="checkbox"
                         id="popup__checkbox"
                         class="popup__checkbox"
                     />
-                    <label for="popup__checkbox">
+                    <label class="label" for="popup__checkbox">
                         <img
                             class="popup__menu-icon"
                             src="img/menu.png"
@@ -32,25 +28,29 @@
                     </label>
                     <div class="popup">
                         <div class="popup__container">
-                            <ul class="popup__container">
-                                <li class="popup-item">
-                                    <a href="#"
+                            <ul class="popup__list">
+                                <li class="popup__item">
+                                    <a class="popup__link" href="#"
                                         ><img
-                                            class="popup__img"
+                                            class="popup-img"
                                             src="img/attached-file.png"
                                             alt="files"
                                         />
-                                        <p class="popup-subtitle">files</p></a
+                                        <p class="popup-subtitle">Files</p></a
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#">
-                                        <img src="img/book.png" alt="books" />
-                                        <p class="popup-subtitle">books</p>
+                                    <a class="popup__link" href="#">
+                                        <img
+                                            src="img/book.png"
+                                            alt="books"
+                                            class="popup-img"
+                                        />
+                                        <p class="popup-subtitle">Books</p>
                                     </a>
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/cashless-payment.png"
                                             alt="apple-pay"
@@ -62,7 +62,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/chat.png"
                                             alt="messages"
@@ -74,19 +74,17 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/customer-service.png"
                                             alt="Customer-support"
                                             class="popup-img"
                                         />
-                                        <p class="popup-subtitle">
-                                            Customer Support
-                                        </p></a
+                                        <p class="popup-subtitle">Support</p></a
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/exam.png"
                                             alt="To-Do"
@@ -98,7 +96,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/home.png"
                                             alt="Home"
@@ -108,7 +106,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/income.png"
                                             alt="finances"
@@ -120,7 +118,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/link.png"
                                             alt="links"
@@ -130,7 +128,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#">
+                                    <a class="popup__link" href="#">
                                         <img
                                             src="img/placeholder.png"
                                             alt="maps"
@@ -140,7 +138,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/post-stamp.png"
                                             alt="postage"
@@ -150,7 +148,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/printer.png"
                                             alt="print"
@@ -160,11 +158,17 @@
                                     >
                                 </li>
                             </ul>
-                            <input type="checkbox" id="more" class="more" />
-                            <label for="more" class="more__btn">More</label>
-                            <ul>
+                            <input
+                                type="checkbox"
+                                id="more"
+                                class="more"
+                            />
+                            <label for="more" class="more__btn"
+                                >More</label
+                            >
+                            <ul class="popup__more">
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/sculpture.png"
                                             alt="arts"
@@ -174,7 +178,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/sleep.png"
                                             alt="alarm"
@@ -184,19 +188,17 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/syringe.png"
                                             alt="print"
                                             class="popup-img"
                                         />
-                                        <p class="popup-subtitle">
-                                            Medicamentation
-                                        </p></a
+                                        <p class="popup-subtitle">Meds</p></a
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/template.png"
                                             alt="calc"
@@ -208,7 +210,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#"
+                                    <a class="popup__link" href="#"
                                         ><img
                                             src="img/time-management.png"
                                             alt="settings"
@@ -220,7 +222,7 @@
                                     >
                                 </li>
                                 <li class="popup__item">
-                                    <a href="#">
+                                    <a class="popup__link" href="#">
                                         <img
                                             src="img/worldwide.png"
                                             alt="connection"
