@@ -267,6 +267,10 @@ header img {
     display: none;
 }
 
+.popup__more {
+    margin-top: 0.5rem;
+}
+
 .more,
 .popup__checkbox {
     appearance: none;
