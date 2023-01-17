@@ -342,6 +342,8 @@ main {
 
 .banner__foreground {
     border: 3px solid black;
+    z-index: 2;
+    position: relative;
 }
 
 .banner__background {
@@ -351,7 +353,7 @@ main {
     position: absolute;
     top: 14px;
     left: -14px;
-    z-index: -1;
+    z-index: 1;
     border: 2px solid black;
 }
 
@@ -409,18 +411,23 @@ footer {
 
 /* Media Queris */
 
+@media only screen and (max-width: 500px) {
+    .popup {
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 700px) {
+    .popup {
+        right: 1rem;
+    }
+
     .mobile-none {
         display: none;
     }
 
     header {
         padding: 0 1rem;
-    }
-
-    .popup {
-        width: 90%;
-        right: 1rem;
     }
 }
 
